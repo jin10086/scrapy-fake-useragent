@@ -25,5 +25,5 @@ class RandomUserAgentMiddleware(object):
             request.headers.setdefault('User-Agent', self.proxy2ua[proxy])
         else:
             _ = self.ua.random
-            logger.debug('Assign User-Agent to %s' % _            
+            logger.debug('Assign User-Agent to %s' % _)           
             request.headers.setdefault('User-Agent', _)
